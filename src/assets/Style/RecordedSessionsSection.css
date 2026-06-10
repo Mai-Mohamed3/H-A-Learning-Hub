@@ -1,0 +1,270 @@
+.recordedSessions{
+  width:100%;
+  padding:120px 8%;
+  background:var(--dark-color);
+  position:relative;
+  overflow:hidden;
+}
+
+.recordedSessions__glow{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:500px;
+  height:500px;
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,183,3,.08),
+    transparent 70%
+  );
+  filter:blur(45px);
+}
+
+.recordedSessions__header{
+  text-align:center;
+  margin-bottom:90px;
+  position:relative;
+  z-index:2;
+}
+
+.recordedSessions__subtitle{
+  color:var(--primary-color);
+  letter-spacing:2px;
+  font-size:15px;
+  font-weight:700;
+}
+
+.recordedSessions__title{
+  color:var(--white-color);
+  font-size:58px;
+  margin:20px 0;
+  font-weight:800;
+  line-height:1.2;
+}
+
+.recordedSessions__title span{
+  color:var(--primary-color);
+}
+
+.recordedSessions__description{
+  max-width:720px;
+  margin:auto;
+  color:var(--text-color);
+  line-height:1.9;
+  font-size:18px;
+}
+
+.recordedSessions__content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:60px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2;
+}
+
+.recordedSessions__features{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  min-width:320px;
+}
+
+.recordedSessions__card{
+  display:flex;
+  align-items:flex-start;
+  gap:25px;
+  padding:30px;
+  border-radius:28px;
+  background:var(--card-bg);
+  border:1px solid var(--border-color);
+  transition:var(--main-transition);
+  backdrop-filter:blur(10px);
+}
+
+.recordedSessions__card:hover{
+  border-color:var(--primary-color);
+  box-shadow:0 0 25px rgba(255,183,3,.08);
+}
+
+.recordedSessions__icon{
+  min-width:75px;
+  height:75px;
+  border-radius:20px;
+  background:rgba(255,183,3,.08);
+  color:var(--primary-color);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+}
+
+.recordedSessions__card h3{
+  color:var(--white-color);
+  font-size:24px;
+  margin-bottom:12px;
+  font-weight:700;
+}
+
+.recordedSessions__card p{
+  color:var(--text-color);
+  line-height:1.8;
+}
+
+.recordedSessions__pricing{
+  flex:1;
+  min-width:320px;
+  display:flex;
+  justify-content:center;
+}
+
+.recordedSessions__pricingBox{
+  width:100%;
+  max-width:460px;
+  padding:50px 40px;
+  border-radius:35px;
+  background:
+  linear-gradient(
+    180deg,
+    rgba(255,183,3,.12),
+    rgba(255,255,255,.03)
+  );
+  border:1px solid rgba(255,183,3,.2);
+  box-shadow:0 0 40px rgba(255,183,3,.08);
+  position:relative;
+  overflow:hidden;
+}
+
+.recordedSessions__pricingBox::before{
+  content:"";
+  position:absolute;
+  top:-120px;
+  right:-120px;
+  width:250px;
+  height:250px;
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,255,255,.08),
+    transparent 70%
+  );
+  filter:blur(20px);
+}
+
+.recordedSessions__badge{
+  display:inline-block;
+  padding:10px 18px;
+  border-radius:30px;
+  background:var(--primary-color);
+  color:var(--secondary-color);
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+.recordedSessions__pricingBox h3{
+  color:var(--white-color);
+  font-size:42px;
+  margin-bottom:20px;
+  font-weight:800;
+}
+
+.recordedSessions__pricingBox p{
+  color:var(--text-color);
+  line-height:1.9;
+  margin-bottom:35px;
+}
+
+.recordedSessions__includes{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-bottom:40px;
+}
+
+.recordedSessions__includes div{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  color:var(--white-color);
+  font-size:16px;
+}
+
+.recordedSessions__includes svg{
+  color:var(--primary-color);
+}
+
+.recordedSessions__prices{
+  margin-bottom:35px;
+}
+
+.recordedSessions__oldPrice{
+  color:#7d8792;
+  text-decoration:line-through;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.recordedSessions__newPrice{
+  color:var(--primary-color);
+  font-size:72px;
+  font-weight:900;
+}
+
+.recordedSessions__newPrice span{
+  font-size:28px;
+  color:var(--white-color);
+}
+
+.recordedSessions__button{
+  width:100%;
+  padding:20px;
+  border:none;
+  border-radius:18px;
+  background:var(--primary-color);
+  color:var(--secondary-color);
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  transition:var(--main-transition);
+}
+
+.recordedSessions__button:hover{
+  box-shadow:var(--gold-shadow);
+}
+
+@media(max-width:992px){
+  .recordedSessions__title{
+    font-size:48px;
+  }
+
+  .recordedSessions__pricingBox h3{
+    font-size:36px;
+  }
+}
+
+@media(max-width:768px){
+  .recordedSessions{
+    padding:90px 6%;
+  }
+
+  .recordedSessions__title{
+    font-size:38px;
+  }
+
+  .recordedSessions__description{
+    font-size:16px;
+  }
+
+  .recordedSessions__card{
+    flex-direction:column;
+  }
+
+  .recordedSessions__newPrice{
+    font-size:56px;
+  }
+}

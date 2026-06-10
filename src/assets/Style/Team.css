@@ -1,0 +1,210 @@
+.team-page{
+  width:100%;
+  background:#07131d;
+  overflow:hidden;
+}
+
+.team-hero{
+  height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+  linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.7)
+  ),
+  url("../Images/Team-Hero-Image.jpeg");
+  background-size:cover;
+  background-position:center;
+}
+
+.team-overlay{
+  position:absolute;
+  inset:0;
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,183,3,.12),
+    transparent 70%
+  );
+}
+
+.team-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:850px;
+  padding:0 20px;
+}
+
+.team-hero-content span{
+  color:#ffb703;
+  letter-spacing:2px;
+  font-size:15px;
+  font-weight:700;
+}
+
+.team-hero-content h1{
+  color:white;
+  font-size:90px;
+  margin:20px 0;
+  font-weight:900;
+}
+
+.team-hero-content h1 span{
+  color:#ffb703;
+}
+
+.team-hero-content p{
+  color:#d1d5db;
+  font-size:20px;
+  line-height:1.9;
+}
+
+.instructors-wrapper{
+  padding:120px 8%;
+  display:flex;
+  flex-direction:column;
+  gap:100px;
+}
+
+.instructor-section{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.instructor-section.reverse{
+  flex-direction:row-reverse;
+}
+
+.instructor-image{
+  flex:1;
+  position:relative;
+   display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.instructor-image img{
+  width:60%;
+  border-radius:35px;
+  position:relative;
+  z-index:2;
+  object-fit:cover;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 0 40px rgba(0,0,0,.4);
+}
+
+.instructor-content{
+  flex:1;
+  min-width:320px;
+}
+
+.instructor-content span{
+  color:#ffb703;
+  letter-spacing:2px;
+  font-size:14px;
+  font-weight:700;
+}
+
+.instructor-content h2{
+  color:white;
+  font-size:58px;
+  margin:20px 0 10px;
+  font-weight:800;
+}
+
+.instructor-content h4{
+  color:#d1d5db;
+  font-size:24px;
+  margin-bottom:25px;
+  font-weight:500;
+}
+
+.instructor-content p{
+  color:#b8c1cc;
+  line-height:2;
+  font-size:17px;
+  margin-bottom:35px;
+}
+
+.instructor-socials{
+  display:flex;
+  gap:18px;
+}
+
+.instructor-socials a{
+  width:58px;
+  height:58px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  color:#ffb703;
+  font-size:22px;
+  transition:.4s;
+}
+
+.instructor-socials a:hover{
+  transform:translateY(-8px);
+  background:#ffb703;
+  color:#07131d;
+  box-shadow:0 0 25px rgba(255,183,3,.3);
+}
+@media (max-width:1200px) {
+  .team-hero{
+    height: 50vh;
+  }
+  .instructor-image img {
+    width: 95%;
+  }
+}
+@media(max-width:992px){
+  .team-hero {
+    height: 47vh;
+  }
+  .team-hero-content h1{
+    font-size:65px;
+  }
+  .instructor-content h2{
+    font-size:42px;
+  }
+
+}
+
+@media(max-width:768px){
+  .team-hero{
+    height:70vh;
+  }
+  .team-hero-content h1{
+    font-size:48px;
+  }
+  .team-hero-content p{
+    font-size:16px;
+  }
+  .instructor-section{
+    gap:40px;
+    flex-direction: column;
+  }
+  .instructor-section.reverse{
+    flex-direction: column;
+  }
+  .instructor-content h2{
+    font-size:36px;
+  }
+   .instructor-image img {
+    width: 75%;
+  }
+}
+@media(max-width:680px){
+  .team-hero{
+    height: 60vh;
+  };
+}

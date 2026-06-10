@@ -1,0 +1,152 @@
+.technical{
+  width:100%;
+  padding:120px 8%;
+  background:var(--secondary-color);
+  position:relative;
+  overflow:hidden;
+}
+
+.technical__glow{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:500px;
+  height:500px;
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,183,3,.08),
+    transparent 70%
+  );
+  filter:blur(45px);
+}
+
+.technical__header{
+  text-align:center;
+  margin-bottom:90px;
+  position:relative;
+  z-index:2;
+}
+
+.technical__subtitle{
+  color:var(--primary-color);
+  letter-spacing:2px;
+  font-size:15px;
+  font-weight:700;
+}
+
+.technical__title{
+  color:var(--white-color);
+  font-size:58px;
+  margin:20px 0;
+  font-weight:800;
+  line-height:1.2;
+}
+
+.technical__title span{
+  color:var(--primary-color);
+}
+
+.technical__description{
+  max-width:720px;
+  margin:auto;
+  color:var(--text-color);
+  line-height:1.9;
+  font-size:18px;
+}
+
+.technical__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+  position:relative;
+  z-index:2;
+}
+
+.technical__card{
+  padding:40px 35px;
+  border-radius:30px;
+  background:var(--card-bg);
+  border:1px solid var(--border-color);
+  backdrop-filter:blur(10px);
+  transition:var(--main-transition);
+  position:relative;
+  overflow:hidden;
+}
+
+.technical__card::before{
+  content:"";
+  position:absolute;
+  top:-100px;
+  right:-100px;
+  width:220px;
+  height:220px;
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,255,255,.06),
+    transparent 70%
+  );
+  filter:blur(20px);
+}
+
+.technical__card:hover{
+  border-color:var(--primary-color);
+  box-shadow:
+  0 0 30px rgba(255,183,3,.08);
+}
+
+.technical__icon{
+  width:85px;
+  height:85px;
+  border-radius:24px;
+  background:rgba(255,183,3,.08);
+  color:var(--primary-color);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  margin-bottom:28px;
+}
+
+.technical__card h3{
+  color:var(--white-color);
+  font-size:28px;
+  margin-bottom:16px;
+  font-weight:700;
+}
+
+.technical__card p{
+  color:var(--text-color);
+  line-height:1.9;
+  font-size:16px;
+}
+
+@media(max-width:992px){
+  .technical__title{
+    font-size:48px;
+  }
+}
+
+@media(max-width:768px){
+  .technical{
+    padding:90px 6%;
+  }
+
+  .technical__title{
+    font-size:38px;
+  }
+
+  .technical__description{
+    font-size:16px;
+  }
+
+  .technical__card{
+    padding:32px 28px;
+  }
+
+  .technical__card h3{
+    font-size:24px;
+  }
+}
