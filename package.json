@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://github.com/Mai-Mohamed3/H-A-Learning-Hub",
+  "homepage":"https://mai-mohamed3.github.io/H-A-Learning-Hub/",
 "scripts": {
   "dev":"vite",
   "build":"vite build",
