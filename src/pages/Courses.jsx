@@ -9,6 +9,8 @@ import LiveSessionsSection
 import RecordedSessionsSection
  from "../components/courses/RecordedSessionsSection";
  import ContactSection from "../components/Home/ContactSection"
+ import ProjectsSection from "../components/courses/ProjectsSection";
+ import ProjectsPricingSection from "../components/courses/ProjectsPricingSection";
 
 function Courses() {
 
@@ -18,8 +20,10 @@ function Courses() {
       <TechnicalSection />
       <MindsetSection />
       <SoftSkillsSection />
+      <ProjectsSection/>
       <LiveSessionsSection/>
       <RecordedSessionsSection/>
+      <ProjectsPricingSection/>
       <ContactSection/>
     </>
 

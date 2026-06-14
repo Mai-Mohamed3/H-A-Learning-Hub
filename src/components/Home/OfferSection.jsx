@@ -81,7 +81,7 @@ function OfferSection() {
         <div className="offer-section__price-box">
 
           <span className="offer-section__old-price">
-            7500 EGP
+            5000 EGP
           </span>
 
           <span className="offer-section__arrow">
@@ -89,7 +89,7 @@ function OfferSection() {
           </span>
 
           <span className="offer-section__new-price">
-            4500 EGP
+            3500 EGP
           </span>
 
         </div>

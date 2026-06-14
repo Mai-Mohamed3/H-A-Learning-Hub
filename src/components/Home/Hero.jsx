@@ -6,6 +6,8 @@ import {
   FaDatabase,
   FaChartBar,
   FaUsers,
+  FaBrain,
+   FaFileExcel
 } from "react-icons/fa";
 
 import {
@@ -42,17 +44,16 @@ const cards = [
     title:"Statistics",
   },
 
-  {
-    id:5,
-    icon:<FaDatabase />,
-    title:"Data Introduction",
-  },
-
-  {
-    id:6,
-    icon:<FaUsers />,
-    title:"Soft Skills",
-  },
+ {
+  id: 5,
+  icon: <FaBrain />,
+  title: "Mindset",
+},
+{
+  id: 6,
+  icon: <FaFileExcel />,
+  title: "Excel",
+},
 
 ];
 

@@ -3,9 +3,9 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-/* import instructor1 from "../../assets/Images/instructor1.jpg";
-import instructor2 from "../../assets/Images/instructor2.jpg";
-import instructor3 from "../../assets/Images/instructor3.jpg"; */
+import adham from "../../assets/Images/Adham.jpeg"
+import fatmaa from "../../assets/Images/fatmaa.jpeg"
+import hossam from "../../assets/Images/hossam.jpeg"
 
 import { motion } from "framer-motion";
 
@@ -17,57 +17,55 @@ const instructors = [
     id:1,
 
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+      hossam,
 
-    name:"Ahmed Hassan",
+    name:"Hossam El-Din Mohamed",
 
     role:
-      "Senior Data Analyst & Power BI Instructor",
+      "Senior Data Quality and Reporting",
 
     experience:
-      "Ahmed has over 6 years of experience in data analysis, business intelligence, and dashboard development. He has trained hundreds of students to build professional Power BI dashboards and solve real business problems using data-driven strategies.",
+      "Senior Data Quality & Reporting Analyst at Mubasher Financial Services, specializing in financial data analysis, reporting, and business intelligence. I am also a Certified Instructor at the Information Technology Institute (ITI), where I deliver professional training programs in Data Analysis and Business Intelligence, and at the Digital Egypt Pioneers Initiative (DEPI), where I mentor and prepare the next generation of data professionals. Currently, I am pursuing a Master’s Degree in Data Analytics with a focus on advanced analytical methodologies and data-driven decision-making. In addition, I am a Microsoft Certified Trainer through the Training of Trainers (ToT) program. I have strong experience in data analysis, data quality management, reporting automation, dashboard development, and data storytelling, and I am skilled in Power BI, SQL, Python, Excel, and modern Business Intelligence solutions. I also work as a Business Partner alongside Adham Osama under the leadership of Dr. Alaa Essam, contributing to training, consulting, and data-driven business initiatives. I am passionate about simplifying complex analytical concepts and helping individuals and organizations unlock the value of data.",
 
-    linkedin:"#",
+    linkedin: "https://www.linkedin.com/in/hussamel-din/",
 
-    email:"mailto:ahmed@example.com",
+
   },
 
   {
     id:2,
 
     image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
+      fatmaa,
 
-    name:"Mariam Ali",
+    name:"Fatma Badr",
 
     role:
-      "Python & SQL Instructor",
+      "Sales Analyst | Data Analyst | Instructor",
 
     experience:
-      "Mariam specializes in Python programming, SQL databases, and data cleaning workflows. She focuses on helping students understand how technical skills connect directly with real-world projects and career opportunities.",
+      " Experienced Sales Analyst with a strong background in sales performance analysis, reporting, and business insights. I currently work as a Data Analyst at NeuroTech, contributing to data-driven decision-making through analytics, reporting, and dashboard development. I also work as an instructor and mentor, helping aspiring analysts build practical skills in Data Analysis and Business Intelligence. My expertise is focused on sales analytics, customer behavior analysis, KPI tracking, and performance measurement, with strong ability to transform sales and operational data into actionable insights that support business growth and strategic planning. I have experience in building interactive dashboards and reports using Power BI, Excel, SQL, and other analytical tools. I am passionate about simplifying data concepts and empowering professionals to leverage data effectively in business environments.",
 
-    linkedin:"#",
+    linkedin: "https://www.linkedin.com/in/fatma-badr5/",
 
-    email:"mailto:mariam@example.com",
   },
 
   {
     id:3,
 
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      adham,
 
-    name:"Omar Khaled",
+    name:"Adham Osama",
 
     role:
-      "Career Coach & Soft Skills Mentor",
+      "Risk MIS Lead | Senior Data Analyst | Instructor",
 
     experience:
-      "Omar helps students build strong communication skills, optimize LinkedIn profiles, prepare professional CVs, and confidently handle technical interviews. His mentorship focuses on preparing students for the actual job market.",
+      "Risk MIS Lead with extensive experience in Risk Management, Financial Analytics, and Business Intelligence. I also serve as an Instructor at the Digital Egypt Pioneers Initiative (DEPI), where I mentor aspiring data professionals in Data Analysis and Business Intelligence, in addition to delivering professional training programs and workshops through multiple private training companies and educational platforms. I am a Microsoft Certified Trainer through the Training of Trainers (ToT) program, with a strong focus on developing analytical thinking and practical business skills. My expertise lies in transforming complex datasets into actionable insights that support executive and strategic decision-making, as well as building reporting systems, executive dashboards, and risk monitoring solutions using Power BI, SQL, and Python. I am also the creator of “The Analyst's Mindset” framework, designed to help analysts develop critical thinking and problem-solving skills beyond technical tools.",
+    
+      linkedin: "https://www.linkedin.com/in/adhamosama3/",
 
-    linkedin:"#",
-
-    email:"mailto:omar@example.com",
   },
 
 ];
@@ -153,8 +151,6 @@ function Team() {
             }}
           >
 
-            {/* IMAGE */}
-
             <motion.div
               className="instructor-image"
 
@@ -211,18 +207,6 @@ function Team() {
 
                 </motion.a>
 
-                <motion.a
-                  href={item.email}
-
-                  whileHover={{
-                    y:-5,
-                    scale:1.08,
-                  }}
-                >
-
-                  <FaEnvelope />
-
-                </motion.a>
 
               </div>
 

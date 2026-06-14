@@ -7,7 +7,11 @@ import {
   FaBrain,
   FaLaptopCode,
   FaUsers,
+  FaFileExcel,
 } from "react-icons/fa";
+import {
+  TbTable,
+} from "react-icons/tb";
 
 import "../../assets/Style/TechnicalSection.css";
 
@@ -50,9 +54,21 @@ const courses = [
 
   {
     icon:<FaUsers />,
-    title:"Soft Skills",
-    desc:
-      "Improve communication, teamwork, and professional presentation skills.",
+    title:"MindSet",
+    desc: 
+    "Develop a growth mindset that encourages continuous learning, resilience, and adapting positively to challenges in personal and professional life."
+  },
+  {
+    icon:<FaFileExcel />,
+    title:"Excel",
+    desc: 
+    "Build strong Excel skills for data analysis, formulas, and organizing data efficiently for business and reporting purposes."
+  },
+  {
+    icon:<TbTable />,
+    title:"Tableau",
+    desc: 
+    "Learn Tableau to create interactive dashboards and data visualizations that turn complex data into clear, insightful visuals."
   },
 
 ];

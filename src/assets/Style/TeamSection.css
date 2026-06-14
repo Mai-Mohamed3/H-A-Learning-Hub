@@ -6,22 +6,6 @@
   overflow:hidden;
 }
 
-.team-section__glow{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:500px;
-  height:500px;
-  background:
-  radial-gradient(
-    circle,
-    rgba(255,183,3,.08),
-    transparent 70%
-  );
-  filter:blur(50px);
-  z-index:0;
-}
 
 .team-section__content{
   display:flex;
@@ -126,9 +110,8 @@
   text-align:center;
 }
 
-.team-card:hover
-.team-card__overlay{
-  opacity:1;
+.team-card:hover .team-card__overlay {
+  opacity: 1;
 }
 
 .team-card:hover{

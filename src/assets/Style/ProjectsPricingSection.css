@@ -1,0 +1,294 @@
+.projectsPricing{
+  width:100%;
+  min-height:100vh;
+  padding:120px 8%;
+  background:var(--secondary-color);
+  position:relative;
+  overflow:hidden;
+}
+
+.projectsPricing .glow{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:550px;
+  height:550px;
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,183,3,.08),
+    transparent 70%
+  );
+  filter:blur(70px);
+  z-index:0;
+}
+
+.projectsPricing__header{
+  text-align:center;
+  margin-bottom:90px;
+  position:relative;
+  z-index:2;
+}
+
+.projectsPricing__subtitle{
+  color:var(--primary-color);
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+.projectsPricing__title{
+  color:var(--white-color);
+  font-size:64px;
+  font-weight:900;
+  line-height:1.15;
+  margin:25px 0;
+}
+
+.projectsPricing__title span{
+  color:var(--primary-color);
+}
+
+.projectsPricing__description{
+  max-width:760px;
+  margin:auto;
+  color:var(--text-color);
+  font-size:18px;
+  line-height:2;
+}
+
+.projectsPricing__content{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:60px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2;
+}
+
+.projectsPricing__projects{
+  flex:1;
+  min-width:320px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.projectsPricing__card{
+  display:flex;
+  gap:20px;
+  padding:28px;
+  border-radius:28px;
+  background:
+  rgba(255,255,255,.04);
+  border:
+  1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  transition:var(--main-transition);
+}
+
+.projectsPricing__card:hover{
+  border-color:rgba(255,183,3,.35);
+  box-shadow:
+  0 0 30px rgba(255,183,3,.08);
+}
+
+.projectsPricing__icon{
+  min-width:70px;
+  height:70px;
+  border-radius:20px;
+  background:
+  rgba(255,183,3,.08);
+  color:var(--primary-color);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+}
+
+.projectsPricing__card h3{
+  color:var(--white-color);
+  font-size:22px;
+  margin-bottom:12px;
+  font-weight:800;
+}
+
+.projectsPricing__card p{
+  color:var(--text-color);
+  line-height:1.8;
+  font-size:15px;
+}
+
+.projectsPricing__pricing{
+  flex:1;
+  min-width:320px;
+  display:flex;
+  justify-content:center;
+}
+
+.projectsPricing__pricingBox{
+  width:100%;
+  max-width:470px;
+  padding:50px 40px;
+  border-radius:35px;
+  background:
+  linear-gradient(
+    180deg,
+    rgba(255,183,3,.12),
+    rgba(255,255,255,.03)
+  );
+  border:
+  1px solid rgba(255,183,3,.2);
+  box-shadow:
+  0 0 40px rgba(255,183,3,.08);
+}
+
+.projectsPricing__badge{
+  display:inline-block;
+  padding:10px 18px;
+  border-radius:30px;
+  background:var(--primary-color);
+  color:var(--secondary-color);
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+.projectsPricing__pricingBox h3{
+  color:var(--white-color);
+  font-size:42px;
+  margin-bottom:20px;
+  font-weight:800;
+}
+
+.projectsPricing__pricingBox p{
+  color:var(--text-color);
+  line-height:1.9;
+  margin-bottom:35px;
+}
+
+.projectsPricing__includes{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-bottom:40px;
+}
+
+.projectsPricing__includes div{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  color:var(--white-color);
+}
+
+.projectsPricing__includes svg{
+  color:var(--primary-color);
+}
+
+.projectsPricing__singlePrice{
+  padding:25px;
+  border-radius:24px;
+  background:
+  rgba(255,255,255,.04);
+  border:
+  1px solid rgba(255,255,255,.08);
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.projectsPricing__singlePrice h4{
+  color:var(--text-color);
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.projectsPricing__singlePrice h2{
+  color:var(--primary-color);
+  font-size:52px;
+  font-weight:900;
+}
+
+.projectsPricing__singlePrice span{
+  font-size:22px;
+  color:var(--white-color);
+}
+
+.projectsPricing__prices{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.projectsPricing__oldPrice{
+  color:#7d8792;
+  font-size:28px;
+  font-weight:700;
+  text-decoration:line-through;
+  margin-bottom:12px;
+}
+
+.projectsPricing__newPrice{
+  color:var(--primary-color);
+  font-size:70px;
+  font-weight:900;
+}
+
+.projectsPricing__newPrice span{
+  font-size:28px;
+  color:var(--white-color);
+}
+
+.projectsPricing__button{
+  width:100%;
+  padding:20px;
+  border:none;
+  border-radius:18px;
+  background:var(--primary-color);
+  color:var(--secondary-color);
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  transition:var(--main-transition);
+}
+
+.projectsPricing__button:hover{
+  box-shadow:
+  0 0 30px rgba(255,183,3,.25);
+}
+
+@media(max-width:1100px){
+
+  .projectsPricing__content{
+    flex-direction:column;
+  }
+
+  .projectsPricing__pricing{
+    width:100%;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .projectsPricing{
+    padding:100px 6%;
+  }
+
+  .projectsPricing__title{
+    font-size:42px;
+  }
+
+  .projectsPricing__projects{
+    grid-template-columns:1fr;
+  }
+
+  .projectsPricing__pricingBox h3{
+    font-size:34px;
+  }
+
+  .projectsPricing__newPrice{
+    font-size:54px;
+  }
+
+}

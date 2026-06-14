@@ -9,16 +9,12 @@ import {
   FaFileAlt,
   FaLinkedin,
   FaUserTie,
-  FaVideo,
+  FaFileExcel,
 } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
 import "../../assets/Style/PricingSection.css";
-
-/* =========================
-   Animation Variants
-========================= */
 
 const fadeUp = {
 
@@ -125,39 +121,31 @@ function PricingSection() {
             </div>
 
             <div className="pricing-item">
-              <FaChartLine />
-              <span>Statistics</span>
-              <strong>1250 EGP</strong>
-            </div>
-
-            <div className="pricing-item">
               <FaLaptopCode />
               <span>Power BI</span>
               <strong>1250 EGP</strong>
             </div>
 
             <div className="pricing-item">
-              <FaBrain />
-              <span>Data Introduction</span>
+              <FaFileExcel />
+              <span>Excel</span>
               <strong>1250 EGP</strong>
             </div>
 
             <div className="pricing-item">
-              <FaUsers />
-              <span>Soft Skills</span>
-              <strong>1250 EGP</strong>
+              <FaLaptopCode />
+              <span>
+                18+ Hours Of Recorded
+                Real Projects Training
+              </span>
             </div>
 
           </div>
 
-          <div className="pricing-card__price">
-
-            <h4>
-              7500 EGP
-            </h4>
-
+          <div className="pricing-card__price price-record">
+            <h5>5000 EGP</h5>
+            <h4 >3500 EGP</h4>
           </div>
-
         </motion.div>
 
         <motion.div
@@ -223,13 +211,8 @@ function PricingSection() {
             </div>
 
             <div className="pricing-item">
-              <FaUsers />
-              <span>Soft Skills</span>
-            </div>
-
-            <div className="pricing-item">
               <FaFileAlt />
-              <span>CV Building</span>
+              <span>CV Building & Interview Preparation</span>
             </div>
 
             <div className="pricing-item">
@@ -238,13 +221,16 @@ function PricingSection() {
             </div>
 
             <div className="pricing-item">
-              <FaUserTie />
-              <span>Interview Preparation</span>
+              <FaFileExcel />
+              <span>Excel</span>
             </div>
 
             <div className="pricing-item">
-              <FaVideo />
-              <span>30 Live Sessions</span>
+              <FaLaptopCode />
+              <span>
+                18+ Hours Of Recorded
+                Real Projects Training
+              </span>
             </div>
 
           </div>

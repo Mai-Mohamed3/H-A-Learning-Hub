@@ -7,6 +7,9 @@ import {
 import { Link } from "react-router-dom";
 
 import "../../assets/Style/TeamSection.css";
+import adham from "../../assets/Images/Adham.jpeg"
+import fatmaa from "../../assets/Images/fatmaa.jpeg"
+import hossam from "../../assets/Images/hossam.jpeg"
 
 const teamMembers = [
 
@@ -14,39 +17,39 @@ const teamMembers = [
     id: 1,
 
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+      hossam,
 
-    name: "Ahmed Hassan",
+    name: "Hossam El-Din Mohamed",
 
-    role: "Senior Data Analyst",
+    role: "Senior Data Quality and Reporting",
 
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/hussamel-din/",
   },
 
   {
     id: 2,
 
     image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
+      adham,
 
-    name: "Sara Mohamed",
+    name: "Adham Osama",
 
-    role: "Power BI Instructor",
+    role: "Senior Data Analyst | Risk Analyst",
 
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/adhamosama3/",
   },
 
   {
     id: 3,
 
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      fatmaa,
 
-    name: "Omar Khaled",
+    name: "Fatma Badr",
 
-    role: "Python Developer",
+    role: "Sales & Reporting Analyst",
 
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/fatma-badr5/",
   },
 
 ];

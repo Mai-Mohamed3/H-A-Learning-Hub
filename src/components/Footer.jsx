@@ -7,17 +7,17 @@ import {
   Link,
 } from "react-router-dom";
 
-import logo from "../assets/Images/logo.jpeg";
+import logo from "../assets/Images/logo.png";
 
 import "../assets/Style/Footer.css";
 
 const instructors = [
 
-  "Ahmed Hassan",
+  "Hossam El-Din Mohamed",
 
-  "Mariam Ali",
+  "Adham Osama",
 
-  "Omar Khaled",
+  "Fatma Badr",
 
 ];
 
@@ -50,26 +50,6 @@ function Footer() {
             to help students build strong technical
             and professional skills for the real market.
           </p>
-
-          <div className="footer-socials">
-
-            <a
-              href="https://www.linkedin.com/in/mai-mohamed-developer"
-              target="_blank"
-              rel="noreferrer"
-            >
-
-              <FaLinkedinIn />
-
-            </a>
-
-            <a href="mailto:example@gmail.com">
-
-              <FaEnvelope />
-
-            </a>
-
-          </div>
 
         </div>
 

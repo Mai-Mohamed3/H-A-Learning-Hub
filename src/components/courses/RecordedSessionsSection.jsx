@@ -6,6 +6,7 @@ import {
   FaCode,
   FaPython,
   FaCheckCircle,
+  FaFileExcel,
 } from "react-icons/fa";
 
 import "../../assets/Style/RecordedSessionsSection.css";
@@ -27,10 +28,10 @@ const recordedFeatures = [
   },
 
   {
-    icon:<FaChartBar />,
-    title:"Statistics",
+    icon:<FaFileExcel />,
+    title:"Excel",
     desc:
-      "Understand data-driven decision making through practical statistical concepts.",
+     "Learn Excel basics for organizing data, simple calculations, and creating easy spreadsheets."
   },
 
   {
@@ -238,7 +239,7 @@ function RecordedSessionsSection() {
                 <FaCheckCircle />
 
                 <span>
-                  Statistics Essentials
+                  Excel
                 </span>
 
               </div>
@@ -249,13 +250,13 @@ function RecordedSessionsSection() {
 
               <h4 className="recordedSessions__oldPrice">
 
-                7500 EGP
+                5000 EGP
 
               </h4>
 
               <h2 className="recordedSessions__newPrice">
 
-                4500
+                3500
                 <span> EGP</span>
 
               </h2>

@@ -143,12 +143,12 @@
 }
 
 .pricing-card .recorded{
-  gap: 50px;
+  gap: 55px;
   font-size: larger;
 }
 
 .pricing-card .recorded .pricing-item {
-  padding: 30px ;
+  padding: 35px ;
 }
 .pricing-card .recorded span{
   font-size: larger;
@@ -185,6 +185,12 @@
   font-size:54px;
   font-weight:900;
 }
+.price-record h5 {
+  text-decoration: line-through;
+  color: gray;
+  font-weight: 400;
+  font-size: 30px;
+
 
 @media(max-width:992px){
   .pricing-section{

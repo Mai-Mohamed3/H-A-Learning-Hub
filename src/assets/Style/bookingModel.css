@@ -101,7 +101,7 @@
   color:#94a3b8;
 }
 
-.booking-modal input:focus{
+.booking-modal input:focus , .booking-modal select:focus{
   border-color:#ffb703;
   box-shadow:
   0 0 20px rgba(255,183,3,.15);
@@ -209,6 +209,36 @@
   transform:translateY(-5px);
 }
 
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border:
+  1px solid rgba(255,255,255,.08);
+  background:
+  rgba(255,255,255,.04);
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select option {
+  
+}
+.booking-modal select:invalid {
+  color: #94a3b8;
+}
+
+.booking-modal select {
+  color: var(--white-color);
+}
+.booking-modal select option {
+  color: #222;
+  padding: 10px;
+}
 @keyframes popup{
   from{
     opacity:0;

@@ -117,7 +117,7 @@
 }
 
 .hero__card--0{
-  top:18%;
+  top:20%;
   left:6%;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .hero__card--2{
-  top:12%;
+  top:15%;
   right:8%;
 }
 
@@ -138,11 +138,12 @@
 
 .hero__card--4{
   bottom:0%;
-  left:35%;
+  left:30%;
+  z-index: 100;
 }
 
 .hero__card--5{
-  bottom:2%;
+  bottom:1%;
   right:25%;
 }
 

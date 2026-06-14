@@ -36,6 +36,14 @@ const cardsContainer = {
   },
 
 };
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "files/course-agenda.pdf";
+  link.download = "course-agenda.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 const cardAnimation = {
 
@@ -159,7 +167,7 @@ function CourseFocus() {
 
           <p>
 
-            Master SQL, Python, Statistics, Power BI,
+            Master SQL, Python, Statistics, Excel, Power BI,
             dashboards, data visualization, reporting,
             and practical workflows used in real companies.
 
@@ -181,17 +189,9 @@ function CourseFocus() {
         viewport={{ once:true }}
       >
 
-        <a
-          href="/files/course-agenda.pdf"
-
-          download
-
-          className="courseFocus__download"
-        >
-
-          Download Course Agenda
-
-        </a>
+    <button onClick={handleDownload} className="courseFocus__download">
+      Download Course Agenda
+    </button>
 
       </motion.div>
 

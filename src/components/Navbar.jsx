@@ -6,7 +6,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-import logo from "../assets/Images/logo.jpeg";
+import logo from "../assets/Images/logo.png";
 
 import "../assets/Style/navbar.css";
 

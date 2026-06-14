@@ -19,6 +19,7 @@ function BookingModal() {
     phone: "",
     email: "",
     comment: "",
+     program: "",
   });
 
 
@@ -105,6 +106,7 @@ function BookingModal() {
         phone: "",
         email: "",
         comment: "",
+        program: "",
       });
 
     } catch (error) {
@@ -208,6 +210,17 @@ function BookingModal() {
                 onChange={handleChange}
                 required
               />
+              <select
+                name="program"
+                value={formData.program}
+                onChange={handleChange}
+                required
+              >
+                <option value="">Select Your Program</option>
+                <option value="Live Sessions">Live Sessions</option>
+                <option value="Recorded Sessions">Recorded Sessions</option>
+                <option value="Recorded Projects">Recorded Projects</option>
+              </select>
 
               <input
                 type="text"
