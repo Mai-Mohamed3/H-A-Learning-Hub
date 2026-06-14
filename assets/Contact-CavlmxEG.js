@@ -1,1 +1,0 @@
-import{t as e}from"./index-BTYNvsyK.js";import{t}from"./ContactSection-DB1o8SSp.js";import{t as n}from"./TeamSection-BvmvxE6i.js";import{n as r,t as i}from"./OfferSection-B-rJDYIX.js";var a=e();function o(){return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(t,{}),(0,a.jsx)(r,{}),(0,a.jsx)(i,{}),(0,a.jsx)(n,{})]})}export{o as default};
