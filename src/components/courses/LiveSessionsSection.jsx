@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
 
 import {
-  FaRobot,
-  FaBrain,
-  FaUsers,
+  FaDatabase,
   FaChartLine,
+  FaPython,
+  FaBrain,
+  FaLaptopCode,
+  FaUsers,
+  FaRobot,
+  FaFileAlt,
+  FaLinkedin,
+  FaUserTie,
+  FaFileExcel,
   FaCheckCircle,
 } from "react-icons/fa";
 
@@ -13,31 +20,40 @@ import "../../assets/Style/LiveSessionsSection.css";
 const features = [
 
   {
-    icon: <FaRobot />,
-    title: "Artificial Intelligence",
-    desc:
-      "Learn how AI is transforming the data analysis industry and how to use AI tools effectively in your career.",
+    icon: <FaDatabase />,
+    title: "SQL",
   },
-
   {
-    icon: <FaBrain />,
-    title: "Advanced Data Mindset",
-    desc:
-      "Develop analytical thinking and understand how real companies solve business problems using data.",
+    icon: <FaPython />,
+    title: "Python",
   },
-
   {
     icon: <FaChartLine />,
-    title: "Career Growth",
-    desc:
-      "Stand out in the market by gaining practical experience and professional-level skills.",
+    title: "Statistics",
   },
-
   {
-    icon: <FaUsers />,
-    title: "Professional Soft Skills",
-    desc:
-      "Improve communication, teamwork, interview confidence, and personal branding.",
+    icon: <FaLaptopCode />,
+    title: "Power BI",
+  },
+  {
+    icon: <FaRobot />,
+    title: "Artificial Intelligence",
+  },
+  {
+    icon: <FaFileAlt />,
+    title: "CV Building & Interview Preparation",
+  },
+  {
+    icon: <FaLinkedin />,
+    title: "LinkedIn Optimization",
+  },
+  {
+    icon: <FaFileExcel />,
+    title: "Excel",
+  },
+  {
+    icon: <FaLaptopCode />,
+    title: "18+ Hours Of Recorded Real Projects Training",
   },
 
 ];
@@ -156,10 +172,6 @@ function LiveSessionsSection() {
                 <h3>
                   {item.title}
                 </h3>
-
-                <p>
-                  {item.desc}
-                </p>
 
               </div>
 
