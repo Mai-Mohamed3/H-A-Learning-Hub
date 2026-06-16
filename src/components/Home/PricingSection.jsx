@@ -143,8 +143,17 @@ function PricingSection() {
           </div>
 
           <div className="pricing-card__price price-record">
-            <h5>5000 EGP</h5>
-            <h4 >3500 EGP</h4>
+            <span className="offer-section__old-price">
+              5000 EGP
+            </span>
+
+            <span className="offer-section__arrow">
+              →
+            </span>
+
+            <span className="offer-section__new-price">
+              3500 EGP
+            </span>
           </div>
         </motion.div>
 
@@ -237,7 +246,7 @@ function PricingSection() {
 
           <div className="pricing-card__price">
 
-            <h4>
+            <h4 className="offer-section__new-price">
               6000 EGP
             </h4>
 
