@@ -26,7 +26,7 @@ ReactDOM.createRoot(
 
     <HelmetProvider>
 
-      <BrowserRouter basename="/H-A-Learning-Hub">
+      <BrowserRouter basename="/">
 
         <App />
 
